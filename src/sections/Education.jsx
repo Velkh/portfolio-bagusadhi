@@ -19,6 +19,20 @@ export default function Education() {
             <p className="text-white font-medium">GPA: 3.67 / 4.00</p>
           </div>
         </div>
+
+        <div className="bg-surface-dark border border-border-subtle rounded-lg p-6 md:p-8 max-w-2xl">
+          <div className="mb-4">
+            <h3 className="text-xl md:text-2xl font-bold text-white">
+              CEP CCIT-FTUI
+            </h3>
+            <p className="text-accent font-medium mt-1">Software Engineering</p>
+          </div>
+
+          <div className="flex flex-col md:flex-row md:justify-between md:items-center gap-2 md:gap-4">
+            <p className="text-text-secondary">2022 — 2024</p>
+            <p className="text-white font-medium">GPA: 3.36 / 4.00</p>
+          </div>
+        </div>
       </div>
     </section>
   );

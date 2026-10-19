@@ -18,7 +18,7 @@ export const projects = [
     links: {
       caseStudy: null,
       github: null,
-      liveDemo: null,
+      liveDemo: 'https://lalapan-depok.dsimfoniku.com/',
     },
   },
   {
