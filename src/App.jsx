@@ -11,7 +11,7 @@ import Contact from './sections/Contact';
 
 export default function App() {
   return (
-    <div className="bg-bg-dark text-white">
+    <div className="h-5 pattern-tape border-y-4 border-white" aria-hidden="true">
       <Navbar />
       <Hero />
       <About />

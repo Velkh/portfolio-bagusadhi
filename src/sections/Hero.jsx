@@ -69,7 +69,7 @@ export default function Hero() {
   return (
     <section
       id="hero"
-      className="min-h-screen pt-32 pb-20 md:pt-40 md:pb-32 bg-bg-dark"
+      className="min-h-screen pt-32 pb-20 md:pt-40 md:pb-32"
     >
       <div className="max-w-6xl mx-auto px-4 md:px-6">
         {/* Eyebrow */}
@@ -80,14 +80,14 @@ export default function Hero() {
         </div>
 
         {/* Main Heading */}
-        <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
+        <h1 className="text-5xl md:text-8xl font-bold uppercase text-white mb-6 leading-[0.95] tracking-tight">
           Bagus Adhi
           <br />
           Nugroho
         </h1>
 
         {/* Role */}
-        <p className="text-2xl md:text-3xl text-accent font-semibold mb-6">
+        <p className="text-2xl md:text-3xl text-accent font-bold uppercase mb-6">
           Backend / Web Developer
         </p>
 
@@ -102,7 +102,7 @@ export default function Hero() {
         <div className="flex flex-wrap gap-4 mb-12">
           <a
             href="#projects"
-            className="px-6 py-3 bg-accent text-bg-dark font-medium rounded hover:bg-accent/90 transition-all duration-150"
+            className="neo-btn"
           >
             View My Work
           </a>
@@ -110,7 +110,7 @@ export default function Hero() {
           <a
             href="/Bagus-Adhi-Nugroho-CV.pdf"
             download="Bagus-Adhi-Nugroho-CV.pdf"
-            className="px-6 py-3 border border-accent text-accent font-medium rounded hover:bg-accent hover:text-bg-dark transition-all duration-150 flex items-center gap-2"
+            className="neo-btn neo-btn--ghost flex items-center gap-2"
           >
             <DownloadIcon size={20} />
             Download CV
@@ -149,8 +149,8 @@ export default function Hero() {
         </div>
 
         {/* Availability */}
-        <div className="mt-16 pt-8 border-t border-border-subtle">
-          <span className="inline-block px-4 py-2 bg-surface-dark border border-border-subtle rounded text-text-secondary text-sm">
+        <div className="mt-16 pt-8 border-t-4 border-white">
+          <span className="neo-chip neo-chip--yellow">
             Available for opportunities
           </span>
         </div>

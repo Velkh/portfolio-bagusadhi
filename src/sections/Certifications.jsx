@@ -4,7 +4,7 @@ import { certificates } from '../data/certificates';
 
 export default function Certifications() {
   return (
-    <section id="certificates" className="py-20 md:py-32 bg-surface-dark">
+    <section id="certificates" className="py-20 md:py-32 bg-black/80 border-t-4 border-white">
       <div className="max-w-6xl mx-auto px-4 md:px-6">
         <SectionTitle>Certifications</SectionTitle>
 

@@ -1,14 +1,22 @@
+import { useState } from 'react';
+
 export default function CertificationCard({ certificate }) {
+  const [imgFailed, setImgFailed] = useState(false);
+
   return (
-    <div className="group bg-surface-dark border border-border-subtle rounded-lg p-6 hover:border-accent transition-colors duration-200">
+    <div className="group neo-card p-6">
       <div className="flex flex-col h-full">
-        <div className="mb-4">
-          <img
-            src={certificate.image}
-            alt={certificate.name}
-            className="w-full h-32 object-cover rounded bg-bg-dark"
-          />
-        </div>
+        {certificate.image && !imgFailed && (
+          <div className="mb-4">
+            <img
+              src={certificate.image}
+              alt={certificate.name}
+              loading="lazy"
+              onError={() => setImgFailed(true)}
+              className="w-full h-32 object-cover rounded bg-bg-dark"
+            />
+          </div>
+        )}
         <div className="flex-1">
           <h3 className="text-lg font-semibold text-white mb-1">{certificate.name}</h3>
           <p className="text-text-secondary text-sm mb-3">{certificate.issuer}</p>

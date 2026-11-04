@@ -49,7 +49,7 @@ function LinkedinIcon({ size = 24 }) {
 
 export default function Contact() {
   return (
-    <section id="contact" className="py-20 md:py-32 bg-surface-dark">
+    <section id="contact" className="py-20 md:py-32 bg-black/80 border-t-4 border-white">
       <div className="max-w-6xl mx-auto px-4 md:px-6">
         <SectionTitle>Let's Work Together</SectionTitle>
 
@@ -65,7 +65,7 @@ export default function Contact() {
             {/* Email */}
             <a
               href="mailto:bagusadhinugroho95@gmail.com"
-              className="group bg-bg-dark border border-border-subtle rounded-lg p-6 hover:border-accent transition-colors duration-200"
+              className="group neo-card p-6"
             >
               <div className="flex items-center gap-3 mb-3 text-accent">
                 <MailIcon />
@@ -82,7 +82,7 @@ export default function Contact() {
               href="https://github.com/Velkh"
               target="_blank"
               rel="noopener noreferrer"
-              className="group bg-bg-dark border border-border-subtle rounded-lg p-6 hover:border-accent transition-colors duration-200"
+              className="group neo-card p-6"
             >
               <div className="flex items-center gap-3 mb-3 text-accent">
                 <GithubIcon />
@@ -99,7 +99,7 @@ export default function Contact() {
               href="https://www.linkedin.com/in/bagusadhi8"
               target="_blank"
               rel="noopener noreferrer"
-              className="group bg-bg-dark border border-border-subtle rounded-lg p-6 hover:border-accent transition-colors duration-200"
+              className="group neo-card p-6"
             >
               <div className="flex items-center gap-3 mb-3 text-accent">
                 <LinkedinIcon />
@@ -115,7 +115,7 @@ export default function Contact() {
           {/* Primary CTA */}
           <a
             href="mailto:bagusadhinugroho95@gmail.com"
-            className="inline-block px-8 py-4 bg-accent text-bg-dark font-bold rounded hover:bg-accent/90 transition-all duration-150 text-lg"
+            className="neo-btn text-lg"
           >
             Send Me an Email
           </a>

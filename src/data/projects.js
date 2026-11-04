@@ -4,7 +4,7 @@ export const projects = [
     name: 'Lalapan Depok',
     description: 'Web-based information system for environmental health operations at Dinas Kesehatan Kota Depok.',
     longDescription: `Multi-role user management system with training management, business verification, pre/post-test functionality, and administrative dashboard. Includes database migration and refactoring with production deployment and troubleshooting.`,
-    image: '/images/LALAPAN.png',
+    image: '/images/LALAPAN.webp',
     technologies: ['Laravel', 'PHP', 'MySQL', 'Bootstrap', 'JavaScript', 'cPanel'],
     highlights: [
       'Multi-role user management',
@@ -17,16 +17,16 @@ export const projects = [
     ],
     links: {
       caseStudy: null,
-      github: null,
+      github: 'https://github.com/Velkh/lalapan-depok1',
       liveDemo: 'https://lalapan-depok.dsimfoniku.com/',
     },
   },
   {
     id: 'sppg-monitoring',
     name: 'Dashboard Monitoring & Evaluation System',
-    description: 'Academic final project: web-based monitoring and evaluation system for all TPP in Depok City',
-    longDescription: 'A comprehensive monitoring and evaluation information system designed to support management and oversight of nutritional service units. Emphasizes implemented system functionality.',
-    image: '/images/DASHBOARD.png',
+    description: 'Academic final project: web-based monitoring and evaluation system for nutrition service units (SPPG) under Dinas Kesehatan Kota Depok.',
+    longDescription: 'A comprehensive monitoring and evaluation information system designed to support management and oversight of nutritional service units.',
+    image: '/images/DASHBOARD.webp',
     technologies: ['Laravel', 'PHP', 'MySQL', 'JavaScript', 'Bootstrap'],
     highlights: [
       'GIZI service monitoring',
@@ -37,7 +37,7 @@ export const projects = [
     ],
     links: {
       caseStudy: null,
-      github: null,
+      github: 'https://github.com/Velkh/sisfor-mbg',
       liveDemo: 'https://dashboard.dsimfoniku.com/',
     },
     isAcademic: true,
@@ -47,7 +47,7 @@ export const projects = [
     name: 'FoCal — Food & Calorie Assistant',
     description: 'Web application for food recognition and nutritional information combining a responsive web interface with machine-learning-based food classification.',
     longDescription: 'An intelligent nutrition tracking tool that uses machine learning to identify foods from images and provide detailed nutritional information. Features a modern, responsive React-based interface.',
-    image: '/images/FOCAL.png',
+    image: '/images/FOCAL.webp',
     technologies: ['React', 'Vite', 'Tailwind CSS', 'Python', 'Machine Learning'],
     highlights: [
       'Food image recognition',
@@ -64,10 +64,10 @@ export const projects = [
   },
   {
     id: 'tms',
-    name: 'TMS — Targetted Money Saver',
+    name: 'TMS — Targeted Money Saver',
     description: 'Cloud-based backend application developed as a Bangkit Academy capstone project using REST APIs and Google Cloud services.',
-    longDescription: 'Backend and cloud infrastructure for a talent management application, featuring RESTful APIs, cloud-based data storage, machine learning API integration, and deployment using Google Cloud Platform services.',
-    image: '/images/TMS.png',
+    longDescription: 'Backend and cloud infrastructure for the TMS capstone application, featuring RESTful APIs, cloud-based data storage, machine learning API integration, and deployment using Google Cloud Platform services.',
+    image: '/images/TMS.webp',
     technologies: [
       'Node.js',
       'Hapi.js',

@@ -4,9 +4,9 @@ import { experience } from '../data/experience';
 
 export default function Experience() {
   return (
-    <section id="experience" className="py-20 md:py-32 bg-bg-dark">
+    <section id="experience" className="py-20 md:py-32 border-t-4 border-white">
       <div className="max-w-6xl mx-auto px-4 md:px-6">
-        <SectionTitle>Professional Experience</SectionTitle>
+        <SectionTitle>Experiences</SectionTitle>
 
         <div className="space-y-8">
           {experience.map((exp) => (

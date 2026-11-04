@@ -10,6 +10,7 @@ export default function Navbar() {
     { label: 'Projects', href: '#projects' },
     { label: 'Skills', href: '#skills' },
     { label: 'Certificates', href: '#certificates' },
+    { label: 'Education', href: '#education' },
     { label: 'Contact', href: '#contact' },
   ];
 
@@ -23,13 +24,13 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-bg-dark/95 backdrop-blur border-b border-border-subtle">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-black border-b-4 border-white">
       <div className="max-w-6xl mx-auto px-4 md:px-6 py-4 flex items-center justify-between">
         {/* Logo */}
         <a
           href="#hero"
           onClick={(e) => handleNavClick(e, '#hero')}
-          className="text-2xl font-bold text-white hover:text-accent transition-colors duration-150"
+          className="text-2xl font-bold bg-accent text-black px-3 border-2 border-white hover:bg-white transition-colors duration-150"
         >
           Bagus.
         </a>
@@ -50,8 +51,9 @@ export default function Navbar() {
 
         {/* Resume Button - Desktop */}
         <a
-          href="#"
-          className="hidden md:inline-block px-4 py-2 border border-accent text-accent hover:bg-accent hover:text-bg-dark transition-colors duration-150 rounded text-sm font-medium"
+          href="/Bagus-Adhi-Nugroho-CV.pdf"
+          download="Bagus-Adhi-Nugroho-CV.pdf"
+          className="hidden md:inline-block neo-btn neo-btn--sm"
         >
           Resume
         </a>
@@ -59,6 +61,8 @@ export default function Navbar() {
         {/* Mobile Menu Button */}
         <button
           onClick={() => setIsOpen(!isOpen)}
+          aria-label={isOpen ? 'Close menu' : 'Open menu'}
+          aria-expanded={isOpen}
           className="md:hidden p-2 text-white hover:text-accent transition-colors"
         >
           {isOpen ? <X size={24} /> : <Menu size={24} />}
@@ -67,7 +71,7 @@ export default function Navbar() {
 
       {/* Mobile Navigation */}
       {isOpen && (
-        <div className="md:hidden bg-surface-dark border-t border-border-subtle">
+        <div className="md:hidden bg-black border-t-4 border-white">
           <div className="flex flex-col gap-4 px-4 md:px-6 py-4">
             {navItems.map((item) => (
               <a
@@ -80,8 +84,9 @@ export default function Navbar() {
               </a>
             ))}
             <a
-              href="#"
-              className="px-4 py-2 border border-accent text-accent hover:bg-accent hover:text-bg-dark transition-colors duration-150 rounded font-medium text-center"
+              href="/Bagus-Adhi-Nugroho-CV.pdf"
+              download="Bagus-Adhi-Nugroho-CV.pdf"
+              className="neo-btn neo-btn--sm text-center"
             >
               Resume
             </a>

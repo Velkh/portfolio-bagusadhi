@@ -1,6 +1,6 @@
 export default function ExperienceCard({ experience }) {
   return (
-    <div className="bg-surface-dark border border-border-subtle rounded-lg p-6 md:p-8 hover:border-accent transition-colors duration-200">
+    <div className="neo-card p-6 md:p-8">
       <div className="flex flex-col md:flex-row md:items-start md:justify-between md:gap-4 mb-4">
         <div>
           <h3 className="text-2xl font-bold text-white mb-1">{experience.role}</h3>
@@ -31,7 +31,7 @@ export default function ExperienceCard({ experience }) {
           {experience.technologies.map((tech) => (
             <span
               key={tech}
-              className="px-3 py-1 bg-bg-dark border border-border-subtle rounded text-xs text-text-secondary"
+              className="neo-chip"
             >
               {tech}
             </span>

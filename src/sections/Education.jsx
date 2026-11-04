@@ -2,11 +2,12 @@ import SectionTitle from '../components/SectionTitle';
 
 export default function Education() {
   return (
-    <section id="education" className="py-20 md:py-32 bg-bg-dark">
+    <section id="education" className="py-20 md:py-32 border-t-4 border-white">
       <div className="max-w-6xl mx-auto px-4 md:px-6">
         <SectionTitle>Education</SectionTitle>
 
-        <div className="bg-surface-dark border border-border-subtle rounded-lg p-6 md:p-8 max-w-2xl">
+        <div className="space-y-6">
+        <div className="neo-card p-6 md:p-8 max-w-2xl">
           <div className="mb-4">
             <h3 className="text-xl md:text-2xl font-bold text-white">
               Politeknik Negeri Jakarta
@@ -20,7 +21,7 @@ export default function Education() {
           </div>
         </div>
 
-        <div className="bg-surface-dark border border-border-subtle rounded-lg p-6 md:p-8 max-w-2xl">
+        <div className="neo-card p-6 md:p-8 max-w-2xl">
           <div className="mb-4">
             <h3 className="text-xl md:text-2xl font-bold text-white">
               CEP CCIT-FTUI
@@ -32,6 +33,7 @@ export default function Education() {
             <p className="text-text-secondary">2022 — 2024</p>
             <p className="text-white font-medium">GPA: 3.36 / 4.00</p>
           </div>
+        </div>
         </div>
       </div>
     </section>
