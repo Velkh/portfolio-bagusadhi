@@ -8,10 +8,15 @@ import Skills from './sections/Skills';
 import Certifications from './sections/Certifications';
 import Education from './sections/Education';
 import Contact from './sections/Contact';
+import CursorGlow from './components/CursorGlow';
+import ScrollProgress from './components/ProgressScroll';
+import FlyingCreature from './components/FlyingCreature';
 
 export default function App() {
   return (
     <div className="h-5 pattern-tape border-y-4 border-white" aria-hidden="true">
+      <CursorGlow/>
+      <ScrollProgress/>
       <Navbar />
       <Hero />
       <About />
