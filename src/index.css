@@ -75,6 +75,43 @@ body {
     letter-spacing: -0.01em;
   }
   
+  .cursor-glow {
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 1;
+    background-image: radial-gradient(#ffd60a 1.5px, transparent 1.5px);
+    background-size: 24px 24px;
+    -webkit-mask-image: radial-gradient(50px circle at var(--x, -999px) var(--y, -999px), #000, transparent);
+    mask-image: radial-gradient(50px circle at var(--x, -999px) var(--y, -999px), #000, transparent);
+    }
+    
+  .fly-track {
+    position: fixed;
+    top: 18vh;
+    left: 0;
+    z-index: 5;
+    pointer-events: none;
+    animation: fly-across 25s linear infinite;
+  }
+  .fly-bob { animation: fly-bob 2s ease-in-out infinite; }
+  .wing { transform-origin: 100px 45px; animation: flap 0.5s ease-in-out infinite alternate; }
+
+  @keyframes fly-across {
+    from { transform: translateX(-250px); }
+    to   { transform: translateX(calc(100vw + 250px)); }
+  }
+  @keyframes fly-bob {
+    50% { transform: translateY(-20px) rotate(-3deg); }
+  }
+  @keyframes flap {
+    from { transform: scaleY(1); }
+    to   { transform: scaleY(0.45); }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .fly-track { display: none; }
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
