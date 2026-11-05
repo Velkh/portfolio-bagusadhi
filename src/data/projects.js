@@ -40,7 +40,6 @@ export const projects = [
       github: 'https://github.com/Velkh/sisfor-mbg',
       liveDemo: 'https://dashboard.dsimfoniku.com/',
     },
-    isAcademic: true,
   },
   {
     id: 'focal',
@@ -61,6 +60,7 @@ export const projects = [
       github: 'https://github.com/FoCal-PNJ',
       liveDemo: null,
     },
+    isAcademic: true,
   },
   {
     id: 'tms',
